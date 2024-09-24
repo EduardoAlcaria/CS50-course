@@ -23,7 +23,7 @@ void print_row(int length, int height)
     }
 
     {   for (int i = 0; i < length; i++)
-        printf("#"); 
+            printf("#"); 
     }
 
     printf("\n");

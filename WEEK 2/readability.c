@@ -1,26 +1,26 @@
 #include<stdio.h>
 #include<string.h>
 
-int wordA(str);
+int lettersA(str);
 int main(void)
 {
     float index;
-    int words = 0, i;
+    int letters = 0, i;
     char str[100];
     printf("text: ");
     scanf("%s", str);
     
-//number of words
-int wordA(str);
+//number of letters
+int lettersA(str);
 {
 
     for (int i = 0; str[i] != '\0'; i++)
         {
             if (str[i] == ' ' || str[i+1] != ' ')
             {
-                words++;
+                letters++;
             }
          }
 }
-    printf("%i",words);
+    printf("%i", letters);
 }

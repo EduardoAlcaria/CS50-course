@@ -22,5 +22,5 @@ int wordA(str);
             }
          }
 }
-    printf("%i",words + 1);
+    printf("%i",words);
 }

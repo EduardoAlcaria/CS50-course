@@ -1,19 +1,20 @@
 #include<stdio.h>
 #include<string.h>
 
-int lettersA(str);
+int analize(str);
+
 int main(void)
 {
-    float index;
+    int words = 0, j;
     int letters = 0, i;
     char str[100];
     printf("text: ");
-    scanf("%s", str);
+    scanf("%[^\n]s", str);
     
-//number of letters
-int lettersA(str);
-{
 
+int analize(str);
+{
+//number of letters
     for (int i = 0; str[i] != '\0'; i++)
         {
             if (str[i] == ' ' || str[i+1] != ' ')
@@ -21,6 +22,16 @@ int lettersA(str);
                 letters++;
             }
          }
+//number of words
+    for (int j = 0; str[j] != '\0'; j++)
+    {
+        if (str[j] == ' ' && str[j+1] != ' ')
+        {
+            words++;
+        }
+        
+    }
+    printf("Letters %d\n", letters);
+    printf("Words %d\n", words + 1);
 }
-    printf("%i", letters);
 }

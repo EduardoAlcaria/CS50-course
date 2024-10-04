@@ -1,25 +1,25 @@
 #include<stdio.h>
 #include<string.h>
 
-int analize(str);
-
+int analize(int str);
 int main(void)
 {
-    
-    int words = 0, j;
-    int letters = 0, i;
+    int words = 1, j;
+    int letters = 1, i;
     int sen = 0, h;
-    char str[100];
+    char str[100000];
     printf("text: ");
     scanf("%[^\n]s", str);
-    
 
-int analize(str);
+
+ 
+
+int analize(int str);
 {
 //number of letters
     for (int i = 0; str[i] != '\0'; i++)
         {
-            if (str[i] == ' ' || str[i+1] != ' ')
+            if (str[i] == ' ' || str[i+1] != '\0')
             {
                 letters++;
             }
@@ -43,8 +43,9 @@ int analize(str);
         
     }
     
-    printf("Letters %d\n", letters);
-    printf("Words %d\n", words + 1);
-    printf("Senteces %d\n", sen);
+    printf("Sentences %d\n", sen);
+    printf("letters %d\n", letters);
+    printf("words %d\n", words);
 }
+
 }
